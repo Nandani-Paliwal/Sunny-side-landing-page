@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+*{
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* width: 375px; */
+}
+.header{
+     /* background-image: url('images/mobile/image-header.jpg'); */
+    
+     /* background-size: 100% 100%;  */
+    position: relative;
+    /* width: 750px; 
+    height: 624px;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.header #logo{
+    
+    position: absolute;
+    padding: 2em 0em 0em 5em;
+    
+}
+.header h1 ,.header h2{
+    color: white;
+    /* margin-top:1.5em ; */
+    padding: 7em 0em 0em 3em;
+    position: absolute;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    font-size: 3.5em;
+    letter-spacing: 0.19em;
+}
+.header h1{
+    padding-top: 6em;
+    padding-left: 4.3em;
+}
+#arrow{
+    position: absolute;
+    padding: 39em 0em 0em 23em;
+    
+}
+.transform ,.stand{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 498px;
+    height:640px;
+}
+.transform h1, .stand h1{
+    font-family: 'Fraunces', serif;
+    padding: 0.9em;
+    color:  hsl(212, 27%, 19%);
+    font-size: 2.5em;
+    text-align: center;
+}
+.transform p, .stand p{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(210, 4%, 67%);
+    line-height: 1.7em;
+    padding: 1.8em 6em;
+    text-align: center;
+     
+}
+.transform a,.stand a{
+    font-family: 'Fraunces', serif;
+    color:  hsl(212, 27%, 19%);
+    text-decoration: none;
+    border-bottom: 0.3em;
+    border-style: none none solid none;
+     
+}
+.transform a{
+    border-color:  hsl(51, 100%, 49%);
+    margin: 1em 0em 3em 0em;
+}
+.stand a{
+    border-color:hsl(7, 99%, 70%);
+    margin: 1em 0em 3em 0em;
+}
+.graphic{
+    position: relative;  
+}
+#design{
+    /* display: end; */
+    position: absolute;
+    top: 55rem;
+    left: 3em;
+    bottom: 1em;
+    text-align: center;
+}
+#design h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(167, 40%, 24%);
+}
+#design p{
+    font-family: 'Barlow', sans-serif;
+    padding:1.8em 6em;
+    line-height: 1.8em;
+    color: hsl(167, 40%, 24%);
+}
+.photography{
+    position: relative;
+}
+#phototext{
+    position: absolute;
+    top: 55rem;
+    left: 3em;
+    bottom: 0em;
+    right: 0em;
+    text-align: center;
+}
+#phototext h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(198, 62%, 26%);
+}
+#phototext p{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(198, 62%, 26%);
+    padding: 1.8em 10em;
+}
+.testimonals{
+    text-align: center;
+    justify-content: center;
+}
+.testimonals h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(210, 4%, 67%);
+    padding: 1.9em 0em;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+}
+#image{
+    border-radius: 9em;
+    width: 10em;
+    padding: 3em;
+}
+.testimonals h3{
+    line-height: 1.7em;
+    padding: 0em 4em;
+    color:  hsl(213, 9%, 39%);
+    font-family: 'Barlow', sans-serif;
+}
+.testimonals h2{
+    color:  hsl(212, 27%, 19%);
+    font-size: 0.9em;
+    padding: 0.5em 19em;
+    letter-spacing: 0em;
+}
+.testimonals p{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(210, 4%, 67%);
+    padding-right: 2.em;
+}
+.images{
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+.footer
+{
+    background-color: hsl(168, 42%, 60%);
+    width: 750px;
+    /* height: 1000px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    justify-content: space-evenly;
+    /* width: 100%; */
+} 
+.footer li{
+    color:hsl(167, 40%, 24%) ;
+    font-size: 1.5em;
+    list-style: none;  
+    padding: auto 7em;
+    
+}
+.footer #logo{
+    width: 25%;
+    padding-top: 5em ;
+    margin: auto;
+}
+#socials{
+    padding: 2em auto;
+    margin: auto;
+}
+.footer #F,#I,#T,#P{
+    padding: 2em;
+}
+@media screen and (max-width:630px)
+{
+    .header #logo{
+        padding: 2em 11em;
+    }
+}
+@media screen and (max-width:750px)
+{
+  .header{
+      position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .header #logo{
+      position: absolute;
+      padding: 2em 2em 2em 2em;
+  }
+}
