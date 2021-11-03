@@ -132,10 +132,16 @@
     font-family: 'Barlow', sans-serif;
     color: hsl(198, 62%, 26%);
     padding: 1.8em 10em;
+    line-height: 1.8em;
 }
 .testimonals{
+    display:flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+}
+.testimonals > divs{
+    width:300px;
 }
 .testimonals h1{
     font-family: 'Fraunces', serif;
@@ -206,24 +212,11 @@
 .footer #F,#I,#T,#P{
     padding: 2em;
 }
-@media screen and (max-width:630px)
-{
-    .header #logo
-    {
-        margin: 0em 8em;
-    }
-    .mobile
-   {
-     display: block;
-   }
-   .des
-   {
-     display: none;
-   }
-}
+
 @media screen and (max-width:1440px) and (min-width:630px)
 { 
-    *{
+    body
+    {
         overflow-x: hidden;
     }
       .mobile
@@ -292,5 +285,21 @@
     .footer #logo{
         padding: 2em 0em;
     }
+    
+}
+@media screen and (max-width:630px)
+{
+    .header #logo
+    {
+        margin: 0em 8em;
+    }
+    .mobile
+   {
+     display: block;
+   }
+   .des
+   {
+     display: none;
+   }
 }
 
